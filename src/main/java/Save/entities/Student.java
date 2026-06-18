@@ -9,7 +9,7 @@ import org.hibernate.Length;
 // verrà rilevata questa Entity e verrà creata la tabella corrispondente, oppure se già esistente verrà aggiornata al bis
 // Gli attributi di questa classe verranno mappati a colonne della tabella anche se non usiamo l'annotazione @Column
 
-// N.B. Un errore molto molto comune è quello di dimenticarsi di aggiornare il persistence.xml con
+// N.B. Un errore molto comune è quello di dimenticarsi di aggiornare il persistence.xml con
 // <class>Save.entities.Student</class>
 // <class>Save.entities.Esempio</class>
 
@@ -41,7 +41,6 @@ public class Student {
         this.surname = surname;
         this.studentType = studentType;
     }
-
 
     public String getName() {
         return name;
