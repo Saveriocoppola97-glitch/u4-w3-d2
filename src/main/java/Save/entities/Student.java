@@ -15,7 +15,6 @@ import org.hibernate.Length;
 
 @Table(name= "students")
 public class Student {
-
     @Id // Annotazione obbligatoria che serve a dire che questo campo "id" sarà la chiave primaria(PK) del database
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 // l'id ad ogni inserimento, con strategy Identity gli chiediamo inoltre di rendere quel campo long invece che un biginteger un
@@ -24,7 +23,6 @@ public class Student {
     private long id;
 
     @Column(nullable = false, length = 30)
-
     private String name;
 
     @Column(nullable = false, length = 30)
